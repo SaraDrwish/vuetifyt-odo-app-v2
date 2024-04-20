@@ -1,10 +1,7 @@
 <template>
   <div class="todo pa-2">
-    <!-- <h1>Todo</h1> -->
-
     <div v-for="ts in tasks" :key="ts.id">
-      <v-list flat class="pa-0 ma-0">
-        <!-- <v-list-item-group> -->
+      <v-list flat class="text-capitalize pa-0 ma-0">
         <v-list-item
           :class="{ 'green lighten-5': ts.done }"
           @click="doneTask(ts.id)"
@@ -13,13 +10,25 @@
           <v-list-item-action>
             <v-checkbox :input-value="ts.done"></v-checkbox>
           </v-list-item-action>
+          <!--
+            :class="
+              ts.done == true ? 'text-decoration-line-through' : 'red--text' "-->
 
-          <v-list-item-title class="text-capitalize">
+          <!-- <v-list-item-content> -->
+          <v-list-item-title
+            :class="{ 'text-decoration-line-through': ts.done }"
+          >
             {{ ts.title }}
           </v-list-item-title>
+          <!-- </v-list-item-content> -->
+
+          <v-list-item-action>
+            <v-btn icon>
+              <v-icon color="grey lighten-2">mdi-delete</v-icon>
+            </v-btn>
+          </v-list-item-action>
           <!-- </template> -->
         </v-list-item>
-        <!-- </v-list-item-group> -->
       </v-list>
       <v-divider></v-divider>
     </div>
