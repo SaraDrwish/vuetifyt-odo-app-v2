@@ -3,10 +3,10 @@
     <v-navigation-drawer v-model="drawer" app>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title>
+          <v-list-item-title class="pt-2">
             <h3>Vuetify Todo</h3>
           </v-list-item-title>
-          <v-list-item-subtitle>
+          <v-list-item-subtitle class="py-2">
             <span>best todo ever !</span>
           </v-list-item-subtitle>
         </v-list-item-content>
@@ -32,7 +32,9 @@
       <v-toolbar-title>Sara's Todo Application</v-toolbar-title>
     </v-app-bar> -->
     <!-- //////////////////////////////////// -->
-    <!-- <v-app-bar color="info" density="prominent">
+    <!-- <v-app-bar 
+       src="https://picsum.photos/1920/1080?random" 
+       color="info" density="prominent">
       <template v-slot:prepend>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
@@ -45,11 +47,12 @@
         </v-btn>
       </template>
     </v-app-bar> -->
+
     <v-app-bar
       app
       color="primary"
       dark
-      src="https://picsum.photos/1920/1080?random"
+      src="./assets/imgs/istockphoto-1421055831-612x612.jpg"
       prominent
     >
       <template v-slot:image>
@@ -58,11 +61,13 @@
         ></v-img>
       </template>
 
-      <template v-slot:prepend>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      </template>
+      <v-app-bar-nav-icon @click="drawer = !drawer">
+        <v-btn icon>
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
+      </v-app-bar-nav-icon>
 
-      <v-app-bar-title>Title</v-app-bar-title>
+      <v-app-bar-title>Vuetify Todo ... </v-app-bar-title>
 
       <v-spacer></v-spacer>
 
