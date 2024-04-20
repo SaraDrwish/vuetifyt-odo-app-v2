@@ -1,18 +1,27 @@
 <template>
   <v-container>
-    <v-row class="text-center">
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
-          >
-        </p>
-      </v-col>
-    </v-row>
+    <h2 class="mb-8 pa-2">About</h2>
+    <p class="pa-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam ratione
+      nisi quis, at tenetur fugiat molestias officia. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Quae nam ratione nisi quis, at tenetur
+      fugiat molestias officia. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Quae nam ratione nisi quis, at tenetur fugiat molestias
+      officia.<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam ratione
+      nisi quis, at tenetur fugiat molestias officia.
+    </p>
+    <br />
+    <p class="pa-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam ratione
+      nisi quis, at tenetur fugiat molestias officia. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Quae nam ratione nisi quis, at tenetur
+      fugiat molestias officia. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Quae nam ratione nisi quis, at tenetur fugiat molestias
+      officia.<br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam ratione
+      nisi quis, at tenetur fugiat molestias officia.
+    </p>
   </v-container>
 </template>
 

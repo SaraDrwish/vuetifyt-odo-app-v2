@@ -43,7 +43,7 @@ export default {
       drawer: true,
       items: [
         // { id: 1, title: "Dashboard", icon: "mdi-view-dashboard", to: "/" },
-        { id: 1, title: "Dashboard", icon: "mdi-format-listcheckes", to: "/" },
+        { id: 1, title: "Dashboard", icon: "mdi-format-list-checks", to: "/" },
         { id: 2, title: "About", icon: "mdi-account", to: "/about" },
         { id: 3, title: "Star", icon: "mdi-star" },
       ],
